@@ -27,6 +27,8 @@ $stmt->bindParam(':email',$username, PDO::PARAM_STR);
 try {
     $stmt->execute();
    // echo "New record inserted successfully";
+    header('Location: home.php');
+    exit();
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
