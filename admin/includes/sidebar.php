@@ -43,6 +43,6 @@
         </ul>
     </div>
     <div class="sidenav-footer mx-3">
-        <a class="btn bg-gradient-primary mt-3 w-100" href="C:\xampp\htdocs\tp_php-main\loginadmin.php">log out</a>
+        <a class="btn bg-gradient-primary mt-3 w-100" href="gamepool-main\loginadmin.php">log out</a>
     </div>
 </aside>
