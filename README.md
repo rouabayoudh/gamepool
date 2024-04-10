@@ -23,6 +23,8 @@ otherwise,you just enter you login info .
 
 you will find yourself in start.php and enjoy the experience.
 
+our bdd is named "fundaservices.sql"
+
 
 
 
