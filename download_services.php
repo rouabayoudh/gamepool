@@ -30,7 +30,7 @@ class FileDownloader {
 }
 
 // Usage
-$file = 'services.pdf'; 
+$file = 'https://github.com/rouabayoudh/pdf/blob/main/services.pdf'; 
 $fileDownloader = new FileDownloader($file);
 $fileDownloader->download();
 
