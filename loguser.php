@@ -30,7 +30,7 @@
         <input id="password" type="password" placeholder="PASSWORD" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
     </div>
         <div class="forget">
-            <a href="feedback.html">FORGET PASSWORD?</a>    
+            <a href="forget-password.php">FORGET PASSWORD?</a>    
         </div>
         <div class="remember">
             <input type="checkbox" id="_checkbox">
@@ -51,5 +51,5 @@
     
 </body>
 </html>
-cdnjs.cloudflare.com
+
 
