@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <audio id="scrollSound" src="feedback.wav" preload="auto"></audio>
+
+    <h1>FEEL FREE!</h1>
+
+    <form action="feedback.php" method="post">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+
+      <label for="priority">Priority</label>
+      <select id="priority" name="prior">
+        <option value="1" selected>Low</option>
+        <option value="2">Medium</option>
+        <option value="3">High</option>
+      </select>
+
+      <fieldset>
+        <legend>Type</legend>
+
+        <label>
+          <input type="radio" name="type" value="1" checked />
+          Complaint
+        </label>
+
+        <br />
+
+        <label>
+          <input type="radio" name="type" value="2" />
+          Suggestion
+        </label>
+      </fieldset>
+
+      <label>
+        <input type="checkbox" name="terms" />
+        I agree to the terms and conditions
+      </label>
+
+      <br />
+
+      <button class="button" id="send"><a href="home.php">send</a></button>
+    </form>
+    <script>
+      let soundPlayed = false;
+      function playTypingSound() {
+        const audio = document.getElementById("scrollSound");
+        if (!soundPlayed) {
+          audio.play();
+          soundPlayed = true;
+        }
+      }
+
+      // Event listener to check when user starts typing
+      document.getElementById("message").addEventListener("input", function () {
+        playTypingSound();
+      });
+       
+    </script>
+  </body>
+</html>
