@@ -30,7 +30,7 @@ class FileDownloader {
 }
 
 // Usage
-$file = 'https://github.com/itsgamee/tp_php/blob/main/services.pdf'; 
+$file = 'services.pdf'; 
 $fileDownloader = new FileDownloader($file);
 $fileDownloader->download();
 
